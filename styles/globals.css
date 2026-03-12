@@ -1,0 +1,76 @@
+/* styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #F2F0ED;
+  --card: #FDFCFB;
+  --border: #E0DBD5;
+  --border-light: #EEE9E3;
+  --surface: #F5F2EE;
+  --surface-hover: #EDE9E4;
+
+  --text-primary: #2C2926;
+  --text-secondary: #6B6460;
+  --text-muted: #9A928C;
+  --text-faint: #B5AFA9;
+
+  --green: #5B8A6E;
+  --green-bg: #F0FDF4;
+  --green-border: #BBF7D0;
+  --green-muted: #DCFCE7;
+
+  --red: #DC2626;
+  --red-bg: #FEF3F2;
+  --red-border: #FECDCA;
+  --red-muted: #FEE2E0;
+
+  --yellow: #D97706;
+  --yellow-bg: #FFFBEB;
+  --yellow-border: #FDE68A;
+  --yellow-muted: #FEF9C3;
+
+  --font-display: 'DM Serif Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-card: 0 2px 24px rgba(44,41,38,0.06), 0 1px 4px rgba(44,41,38,0.04);
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
